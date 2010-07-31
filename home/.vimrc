@@ -22,7 +22,7 @@ silent! call pathogen#runtime_append_all_bundles()
   set hlsearch
 
   " highlight the current line the cursor is on
-  " set cursorline
+  set cursorline
   "sm:    flashes matching brackets or parentheses
   set showmatch
 
@@ -48,13 +48,13 @@ silent! call pathogen#runtime_append_all_bundles()
   set wildmode=list:longest,full
 
   " Display extra whitespace
-  "set list listchars=tab:»·,trail:·
+  set list listchars=tab:»·,trail:·
 
   " don't make it look like there are line breaks where there aren't:
   "set nowrap
 
   " assume the /g flag on :s substitutions to replace all matches in a line:
-  set gdefault
+  "set gdefault
 
   " Load matchit (% to bounce from do to end, etc.)
   runtime! macros/matchit.vim
@@ -95,7 +95,7 @@ silent! call pathogen#runtime_append_all_bundles()
   let NERDTreeShowHidden = 1
   " map enter to activating a node
   let NERDTreeMapActivateNode='<CR>'
-  let NERDTreeIgnore=['\.git','\.DS_Store','\.pdf']
+  let NERDTreeIgnore=['\.git','\.DS_Store']
 
   " limit number of results shown for performance
   let g:fuzzy_matching_limit=60
@@ -201,6 +201,12 @@ silent! call pathogen#runtime_append_all_bundles()
 
 " Section: mappings
 
+  ",v brings up my .vimrc
+  ",V reloads it -- making all changes active (have to save first)
+
+  map ,v :sp ~/.vimrc<CR><C-W>_
+  map <silent> ,V :source ~/.vimrc<CR>:filetype detect<CR>:exe ":echo 'vimrc reloaded'"<CR>
+  
   " Tab navigation
   nmap <leader>tn :tabnext<CR>
   nmap <leader>tp :tabprevious<CR>
