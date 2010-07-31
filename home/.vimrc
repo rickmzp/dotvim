@@ -6,7 +6,7 @@ silent! call pathogen#runtime_append_all_bundles()
   scriptencoding utf-8
 
   " I like pretty colors
-  colorscheme ir_black
+  colorscheme vividchalk
 
   " These two enable syntax highlighting
   set nocompatible          " We're running Vim, not Vi!
