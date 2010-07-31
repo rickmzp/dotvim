@@ -7,3 +7,9 @@
 [submodule "home/.vim/bundle/vim-vividchalk"]
 	path = home/.vim/bundle/vim-vividchalk
 	url = git://github.com/tpope/vim-vividchalk.git
+[submodule "home/.vim/bundle/vim-rooter"]
+	path = home/.vim/bundle/vim-rooter
+	url = http://github.com/airblade/vim-rooter.git
+[submodule "home/.vim/bundle/vim-peepopen"]
+	path = home/.vim/bundle/vim-peepopen
+	url = http://github.com/shemerey/vim-peepopen.git
