@@ -13,3 +13,24 @@
 [submodule "home/.vim/bundle/vim-peepopen"]
 	path = home/.vim/bundle/vim-peepopen
 	url = http://github.com/shemerey/vim-peepopen.git
+[submodule "home/.vim/bundle/vim-rails"]
+	path = home/.vim/bundle/vim-rails
+	url = http://github.com/tpope/vim-rails.git
+[submodule "home/.vim/bundle/vim-endwise"]
+	path = home/.vim/bundle/vim-endwise
+	url = http://github.com/tpope/vim-endwise.git
+[submodule "home/.vim/bundle/vim-git"]
+	path = home/.vim/bundle/vim-git
+	url = http://github.com/tpope/vim-git.git
+[submodule "home/.vim/bundle/vim-ruby"]
+	path = home/.vim/bundle/vim-ruby
+	url = http://github.com/vim-ruby/vim-ruby.git
+[submodule "home/.vim/bundle/vim-bufexplorer"]
+	path = home/.vim/bundle/vim-bufexplorer
+	url = http://github.com/edsono/vim-bufexplorer.git
+[submodule "home/.vim/bundle/vim-snipmate"]
+	path = home/.vim/bundle/vim-snipmate
+	url = http://github.com/msanders/snipmate.vim.git
+[submodule "home/.vim/snippets"]
+	path = home/.vim/snippets
+	url = git@github.com:digx/snipmate-snippets.git

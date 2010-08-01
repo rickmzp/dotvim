@@ -208,8 +208,8 @@ silent! call pathogen#runtime_append_all_bundles()
   map <silent> ,V :source ~/.vimrc<CR>:filetype detect<CR>:exe ":echo 'vimrc reloaded'"<CR>
   
   " Tab navigation
-  nmap <leader>tn :tabnext<CR>
-  nmap <leader>tp :tabprevious<CR>
+  nmap <D-]> :tabnext<CR>
+  nmap <D-[> :tabprevious<CR>
   nmap <leader>te :tabedit
 
   " Remap F1 from Help to ESC.  No more accidents.
