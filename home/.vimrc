@@ -6,7 +6,9 @@ silent! call pathogen#runtime_append_all_bundles()
   scriptencoding utf-8
 
   " I like pretty colors
-  colorscheme vividchalk
+  set background=dark
+  colorscheme solarized
+  let g:solarized_termtrans=1
 
   " These two enable syntax highlighting
   set nocompatible          " We're running Vim, not Vi!
@@ -36,7 +38,7 @@ silent! call pathogen#runtime_append_all_bundles()
   set directory=/tmp/
 
   " When scrolling off-screen do so 3 lines at a time, not 1
-  set scrolloff=3
+  set scrolloff=999
 
   " enable line numbers 
   set number
@@ -80,8 +82,12 @@ silent! call pathogen#runtime_append_all_bundles()
 
   " can has foldin plz?
   set foldenable
-  set foldmethod=syntax
-  set foldlevel=999 " make it really high, so they're not displayed by default
+  set foldmethod=indent
+  set foldnestmax=3
+  set foldlevel=2 " make it really high, so they're not displayed by default
+
+  " disable escape delay
+  set noesckeys
   
 
   " Turn off rails bits of statusbar
@@ -127,6 +133,13 @@ silent! call pathogen#runtime_append_all_bundles()
     au BufRead,BufNewFile Thorfile set ft=ruby                                   
     au BufRead,BufNewFile *.god set ft=ruby  
   augroup END
+
+  " my favorite identation [RM]
+  set autoindent
+  set shiftwidth=2
+  set softtabstop=2
+  set tabstop=2
+  set expandtab
 
 
   " When editing a file, always jump to the last known cursor position.
@@ -208,6 +221,8 @@ silent! call pathogen#runtime_append_all_bundles()
   map <silent> ,V :source ~/.vimrc<CR>:filetype detect<CR>:exe ":echo 'vimrc reloaded'"<CR>
   
   " Tab navigation
+  nmap <D-t> :tabnew<CR>
+  nmap <D-w> :tabclose<CR>
   nmap <D-]> :tabnext<CR>
   nmap <D-[> :tabprevious<CR>
   nmap <leader>te :tabedit
@@ -268,3 +283,6 @@ silent! call pathogen#runtime_append_all_bundles()
   endfunction
   command! RspecToMocha call RspecToMocha()
   
+  " enable per-directory .vimrc files
+  set exrc
+  set secure  " disable unsafe commands in local .vimrc files
