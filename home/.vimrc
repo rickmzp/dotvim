@@ -7,7 +7,7 @@ silent! call pathogen#runtime_append_all_bundles()
 
   " I like pretty colors
   set background=dark
-  colorscheme solarized
+  colorscheme vividchalk
   let g:solarized_termtrans=1
   let g:solarized_underline=0
   let g:solarized_visibility='normal'
