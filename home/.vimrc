@@ -6,11 +6,12 @@ silent! call pathogen#runtime_append_all_bundles()
   scriptencoding utf-8
 
   " I like pretty colors
+  set t_Co=256
   set background=dark
-  colorscheme vividchalk
-  let g:solarized_termtrans=1
-  let g:solarized_underline=0
-  let g:solarized_visibility='normal'
+  colorscheme vividchalk-rick
+  " let g:solarized_termtrans=1
+  " let g:solarized_underline=0
+  " let g:solarized_visibility='normal'
 
   " These two enable syntax highlighting
   set nocompatible          " We're running Vim, not Vi!
