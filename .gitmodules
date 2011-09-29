@@ -46,3 +46,6 @@
 [submodule "home/.vim/bundle/tabular"]
 	path = home/.vim/bundle/tabular
 	url = https://github.com/godlygeek/tabular.git
+[submodule "home/.vim/bundle/nerdcommenter"]
+	path = home/.vim/bundle/nerdcommenter
+	url = https://github.com/scrooloose/nerdcommenter.git
