@@ -6,12 +6,9 @@ silent! call pathogen#runtime_append_all_bundles()
   scriptencoding utf-8
 
   " I like pretty colors
-  set t_Co=256
   set background=dark
-  colorscheme vividchalk-rick
-  " let g:solarized_termtrans=1
-  " let g:solarized_underline=0
-  " let g:solarized_visibility='normal'
+  set t_Co=256
+  colorscheme vividchalk
 
   " These two enable syntax highlighting
   set nocompatible          " We're running Vim, not Vi!
@@ -85,9 +82,9 @@ silent! call pathogen#runtime_append_all_bundles()
 
   " can has foldin plz?
   set foldenable
+  set foldlevel=1 " make it really high, so they're not displayed by default
   set foldmethod=indent
-  set foldnestmax=3
-  set foldlevel=999 " make it really high, so they're not displayed by default
+  set foldnestmax=10
 
   " disable escape delay
   set noesckeys
@@ -289,3 +286,7 @@ silent! call pathogen#runtime_append_all_bundles()
   " enable per-directory .vimrc files
   set exrc
   set secure  " disable unsafe commands in local .vimrc files
+
+  " limit autocomplete to current file and ctags
+  set complete=.,t
+
