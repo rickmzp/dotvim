@@ -49,3 +49,6 @@
 [submodule "home/.vim/bundle/nerdcommenter"]
 	path = home/.vim/bundle/nerdcommenter
 	url = https://github.com/scrooloose/nerdcommenter.git
+[submodule "home/.vim/bundle/hammer"]
+	path = home/.vim/bundle/hammer
+	url = https://github.com/robgleeson/hammer.vim.git
