@@ -25,9 +25,6 @@
 [submodule "home/.vim/bundle/vim-snipmate"]
 	path = home/.vim/bundle/vim-snipmate
 	url = http://github.com/msanders/snipmate.vim.git
-[submodule "home/.vim/snippets"]
-	path = home/.vim/snippets
-	url = git@github.com:digx/snipmate-snippets.git
 [submodule "home/.vim/bundle/nerdtree"]
 	path = home/.vim/bundle/nerdtree
 	url = http://github.com/scrooloose/nerdtree.git
