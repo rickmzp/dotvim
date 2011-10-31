@@ -266,6 +266,9 @@ silent! call pathogen#runtime_append_all_bundles()
 
   nnoremap <leader>irb :<C-u>below new<CR>:setfiletype irb<CR>:set syntax=ruby<CR>:set buftype=nofile<CR>:set bufhidden=delete<CR>i
 
+  " paste toggle
+  set pastetoggle=<leader>p
+
   " Easily lookup documentation on apidock
   noremap <leader>rb :call OpenRubyDoc(expand('<cword>'))<CR>
   noremap <leader>rr :call OpenRailsDoc(expand('<cword>'))<CR>
