@@ -93,6 +93,9 @@ silent! call pathogen#runtime_append_all_bundles()
   " Turn off rails bits of statusbar
   let g:rails_statusline=0
 
+  " ignore github-markup gem missing
+  let g:HammerQuiet=1
+
   " quit NERDTree after openning a file
   let NERDTreeQuitOnOpen=1
   " colored NERD Tree
