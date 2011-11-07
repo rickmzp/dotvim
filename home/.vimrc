@@ -296,3 +296,6 @@ silent! call pathogen#runtime_append_all_bundles()
   " limit autocomplete to current file and ctags
   set complete=.,t
 
+  " show long lines as errors
+  match ErrorMsg '\%>80v.\+'
+
