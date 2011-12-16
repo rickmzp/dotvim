@@ -299,3 +299,6 @@ silent! call pathogen#runtime_append_all_bundles()
   " show long lines as errors
   match ErrorMsg '\%>80v.\+'
 
+  " unwanted whitespace removal for ruby
+  autocmd BufWritePre *.rb :%s/\s\+$//e
+  autocmd BufWritePre *.php :%s/\s\+$//e
