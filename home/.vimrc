@@ -302,6 +302,9 @@ silent! call pathogen#runtime_append_all_bundles()
   " unwanted whitespace removal for ruby
   autocmd BufWritePre *.rb :%s/\s\+$//e
   autocmd BufWritePre *.php :%s/\s\+$//e
+  autocmd BufWritePre *.haml :%s/\s\+$//e
+  autocmd BufWritePre *.js :%s/\s\+$//e
+  autocmd BufWritePre *.coffee :%s/\s\+$//e
 
   " NeoComplCache
   let g:neocomplcache_enable_at_startup = 1
