@@ -52,6 +52,3 @@
 [submodule "home/.vim/bundle/neocomplcache"]
 	path = home/.vim/bundle/neocomplcache
 	url = https://github.com/Shougo/neocomplcache.git
-[submodule "home/.vim/bundle/vim-yard"]
-	path = home/.vim/bundle/vim-yard
-	url = https://github.com/postmodern/vim-yard.git
