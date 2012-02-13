@@ -55,3 +55,6 @@
 [submodule "home/.vim/bundle/vim-bundler"]
 	path = home/.vim/bundle/vim-bundler
 	url = https://github.com/tpope/vim-bundler.git
+[submodule "home/.vim/bundle/gist"]
+	path = home/.vim/bundle/gist
+	url = https://github.com/mattn/gist-vim.git
