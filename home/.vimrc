@@ -308,3 +308,6 @@ silent! call pathogen#runtime_append_all_bundles()
 
   " NeoComplCache
   let g:neocomplcache_enable_at_startup = 1
+
+  " use tjump instead of tag
+  noremap <C-]> g<C-]>
