@@ -311,3 +311,8 @@ silent! call pathogen#runtime_append_all_bundles()
 
   " use tjump instead of tag
   noremap <C-]> g<C-]>
+
+  " gist options
+  let g:gist_open_browser_after_post = 1
+  let g:gist_show_privates = 1
+  let g:gist_private = 1
