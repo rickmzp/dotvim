@@ -316,3 +316,6 @@ silent! call pathogen#runtime_append_all_bundles()
   let g:gist_open_browser_after_post = 1
   let g:gist_show_privates = 1
   let g:gist_private = 1
+
+  " notes options
+  let g:notes_directory = '~/Documents/Notes'
