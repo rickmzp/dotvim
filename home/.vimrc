@@ -81,7 +81,7 @@ silent! call pathogen#runtime_append_all_bundles()
   set backspace=indent,eol,start
 
   " can has foldin plz?
-  set foldenable
+  set nofoldenable
   set foldlevel=1 " make it really high, so they're not displayed by default
   set foldmethod=indent
   set foldnestmax=10
@@ -218,11 +218,11 @@ silent! call pathogen#runtime_append_all_bundles()
 " Section: mappings
 
   ",v brings up my .vimrc
-  ",V reloads it -- making all changes active (have to save first)
+  map <leader>v :sp ~/.vimrc<CR><C-W>_
 
-  map ,v :sp ~/.vimrc<CR><C-W>_
-  map <silent> ,V :source ~/.vimrc<CR>:filetype detect<CR>:exe ":echo 'vimrc reloaded'"<CR>
-  
+  ",V reloads it -- making all changes active (have to save first)
+  map <silent> <leader>V :source ~/.vimrc<CR>:filetype detect<CR>:exe ":echo 'vimrc reloaded'"<CR>
+
   " Tab navigation
   nmap <D-t> :tabnew<CR>
   nmap <D-w> :tabclose<CR>
@@ -297,7 +297,7 @@ silent! call pathogen#runtime_append_all_bundles()
   set complete=.,t
 
   " show long lines as errors
-  match ErrorMsg '\%>80v.\+'
+  " match ErrorMsg '\%>80v.\+'
 
   " unwanted whitespace removal for ruby
   autocmd BufWritePre *.rb :%s/\s\+$//e
@@ -305,6 +305,7 @@ silent! call pathogen#runtime_append_all_bundles()
   autocmd BufWritePre *.haml :%s/\s\+$//e
   autocmd BufWritePre *.js :%s/\s\+$//e
   autocmd BufWritePre *.coffee :%s/\s\+$//e
+  autocmd BufWritePre *.feature :%s/\s\+$//e
 
   " NeoComplCache
   let g:neocomplcache_enable_at_startup = 1
@@ -319,3 +320,5 @@ silent! call pathogen#runtime_append_all_bundles()
 
   " notes options
   let g:notes_directory = '~/Documents/Notes'
+  let g:notes_tagsindex = '~/Documents/Notes/.tags'
+  let g:notes_suffix    = '.mkdn'
