@@ -322,3 +322,15 @@ silent! call pathogen#runtime_append_all_bundles()
   let g:notes_directory = '~/Documents/Notes'
   let g:notes_tagsindex = '~/Documents/Notes/.tags'
   let g:notes_suffix    = '.mkdn'
+
+  " fuzzy finder
+  " let g:fuf_dir_exclude = '\v(^|[/\\])\.(hg|git|bzr)($|[/\\])|tiny_mce.?|doc|tmp'
+
+  map <C-j> :FufJumpList<CR>
+  map <C-t> :FufCoverageFile<CR>
+
+  map <leader>t :e ~/Dropbox/todo/todo.txt<CR>
+  map <leader>z :Tabularize /\|<CR>
+  
+  inoremap kj <Esc>
+  inoremap jj <Esc>

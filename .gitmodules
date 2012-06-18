@@ -64,3 +64,9 @@
 [submodule "home/.vim/bundle/clojure"]
 	path = home/.vim/bundle/clojure
 	url = https://github.com/vim-scripts/VimClojure.git
+[submodule "home/.vim/bundle/FuzzyFinder"]
+	path = home/.vim/bundle/FuzzyFinder
+	url = https://github.com/vim-scripts/FuzzyFinder.git
+[submodule "home/.vim/bundle/L9"]
+	path = home/.vim/bundle/L9
+	url = https://github.com/vim-scripts/L9.git
