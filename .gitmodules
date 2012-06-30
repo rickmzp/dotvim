@@ -21,7 +21,7 @@
 	url = http://github.com/vim-ruby/vim-ruby.git
 [submodule "home/.vim/bundle/vim-bufexplorer"]
 	path = home/.vim/bundle/vim-bufexplorer
-	url = http://github.com/edsono/vim-bufexplorer.git
+	url = http://github.com/thisivan/vim-bufexplorer.git
 [submodule "home/.vim/bundle/vim-snipmate"]
 	path = home/.vim/bundle/vim-snipmate
 	url = http://github.com/msanders/snipmate.vim.git
@@ -45,7 +45,7 @@
 	url = https://github.com/scrooloose/nerdcommenter.git
 [submodule "home/.vim/bundle/hammer"]
 	path = home/.vim/bundle/hammer
-	url = https://github.com/robgleeson/hammer.vim.git
+	url = https://github.com/matthias-guenther/hammer.vim.git
 [submodule "home/.vim/bundle/vim-coffee-script"]
 	path = home/.vim/bundle/vim-coffee-script
 	url = https://github.com/kchmck/vim-coffee-script.git
@@ -70,3 +70,12 @@
 [submodule "home/.vim/bundle/L9"]
 	path = home/.vim/bundle/L9
 	url = https://github.com/vim-scripts/L9.git
+[submodule "home/.vim/bundle/textobj-user"]
+	path = home/.vim/bundle/textobj-user
+	url = https://github.com/kana/vim-textobj-user.git
+[submodule "home/.vim/bundle/matchit"]
+	path = home/.vim/bundle/matchit
+	url = https://github.com/tmhedberg/matchit.git
+[submodule "home/.vim/bundle/textobj-rubyblock"]
+	path = home/.vim/bundle/textobj-rubyblock
+	url = https://github.com/nelstrom/vim-textobj-rubyblock.git

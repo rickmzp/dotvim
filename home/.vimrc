@@ -332,5 +332,8 @@ silent! call pathogen#runtime_append_all_bundles()
   map <leader>t :e ~/Dropbox/todo/todo.txt<CR>
   map <leader>z :Tabularize /\|<CR>
   
-  inoremap kj <Esc>
   inoremap jj <Esc>
+
+  " matchit
+  runtime macros/matchit.vim
+
