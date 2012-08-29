@@ -85,3 +85,6 @@
 [submodule "home/.vim/bundle/turbux"]
 	path = home/.vim/bundle/turbux
 	url = https://github.com/jgdavey/vim-turbux.git
+[submodule "home/.vim/bundle/Command-T"]
+	path = home/.vim/bundle/Command-T
+	url = https://github.com/wincent/Command-T.git
