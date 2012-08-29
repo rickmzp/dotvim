@@ -79,3 +79,9 @@
 [submodule "home/.vim/bundle/textobj-rubyblock"]
 	path = home/.vim/bundle/textobj-rubyblock
 	url = https://github.com/nelstrom/vim-textobj-rubyblock.git
+[submodule "home/.vim/bundle/tslime"]
+	path = home/.vim/bundle/tslime
+	url = https://github.com/jgdavey/tslime.vim.git
+[submodule "home/.vim/bundle/turbux"]
+	path = home/.vim/bundle/turbux
+	url = https://github.com/jgdavey/vim-turbux.git
