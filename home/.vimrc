@@ -337,3 +337,6 @@ silent! call pathogen#runtime_append_all_bundles()
   " matchit
   runtime macros/matchit.vim
 
+  " tslime
+  vmap <C-c> <Plug>SendSelectionToTmux
+  nmap <C-c>v <Plug>SetTmuxVars
