@@ -228,7 +228,7 @@ silent! call pathogen#runtime_append_all_bundles()
   nmap <D-w> :tabclose<CR>
   nmap <D-]> :tabnext<CR>
   nmap <D-[> :tabprevious<CR>
-  nmap <leader>te :tabedit
+  nmap <leader>te :tabedit 
 
   " Remap F1 from Help to ESC.  No more accidents.
   nmap <F1> <Esc>
@@ -326,10 +326,11 @@ silent! call pathogen#runtime_append_all_bundles()
   " fuzzy finder
   " let g:fuf_dir_exclude = '\v(^|[/\\])\.(hg|git|bzr)($|[/\\])|tiny_mce.?|doc|tmp'
 
-  map <C-j> :FufJumpList<CR>
-  map <C-t> :FufCoverageFile<CR>
+  nmap <leader>f :CommandT<CR>
+  nmap <leader>k :CommandTBuffer<CR>
+  nmap <leader>j :CommandTJump<CR>
 
-  map <leader>t :e ~/Dropbox/todo/todo.txt<CR>
+  " map <leader>t :e ~/Dropbox/todo/todo.txt<CR>
   map <leader>z :Tabularize /\|<CR>
   
   inoremap jj <Esc>
@@ -340,3 +341,7 @@ silent! call pathogen#runtime_append_all_bundles()
   " tslime
   vmap <C-c> <Plug>SendSelectionToTmux
   nmap <C-c>v <Plug>SetTmuxVars
+
+  " turbux
+  nmap <C-t> <Plug>SendTestToTmux
+  " nmap <C-T> <Plug>SendFocusedTestToTmux
