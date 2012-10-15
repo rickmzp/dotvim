@@ -338,10 +338,9 @@ silent! call pathogen#runtime_append_all_bundles()
   " matchit
   runtime macros/matchit.vim
 
-  " tslime
-  vmap <C-c> <Plug>SendSelectionToTmux
-  nmap <C-c>v <Plug>SetTmuxVars
+  " vimux
+  let VimuxUseNearestPane = 1
 
   " turbux
   nmap <C-t> <Plug>SendTestToTmux
-  " nmap <C-T> <Plug>SendFocusedTestToTmux
+  nmap <C-f> <Plug>SendFocusedTestToTmux
