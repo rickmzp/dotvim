@@ -88,3 +88,6 @@
 [submodule "home/.vim/bundle/Command-T"]
 	path = home/.vim/bundle/Command-T
 	url = https://github.com/wincent/Command-T.git
+[submodule "home/.vim/bundle/ruby-refactoring"]
+	path = home/.vim/bundle/ruby-refactoring
+	url = https://github.com/ecomba/vim-ruby-refactoring.git
