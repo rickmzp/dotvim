@@ -91,3 +91,6 @@
 [submodule "home/.vim/bundle/ruby-refactoring"]
 	path = home/.vim/bundle/ruby-refactoring
 	url = https://github.com/ecomba/vim-ruby-refactoring.git
+[submodule "home/.vim/bundle/vimux"]
+	path = home/.vim/bundle/vimux
+	url = https://github.com/benmills/vimux.git
