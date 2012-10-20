@@ -91,3 +91,6 @@
 [submodule "home/.vim/bundle/vimux"]
 	path = home/.vim/bundle/vimux
 	url = https://github.com/benmills/vimux.git
+[submodule "home/.vim/bundle/rake"]
+	path = home/.vim/bundle/rake
+	url = git://github.com/tpope/vim-rake.git
