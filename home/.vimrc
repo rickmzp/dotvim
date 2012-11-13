@@ -38,7 +38,7 @@ silent! call pathogen#runtime_append_all_bundles()
   set directory=/tmp/
 
   " When scrolling off-screen do so 3 lines at a time, not 1
-  set scrolloff=999
+  set scrolloff=5
 
   " enable line numbers 
   set number
@@ -83,7 +83,7 @@ silent! call pathogen#runtime_append_all_bundles()
   " can has foldin plz?
   set nofoldenable
   set foldlevel=1 " make it really high, so they're not displayed by default
-  set foldmethod=indent
+  set foldmethod=syntax
   set foldnestmax=10
 
   " disable escape delay
@@ -296,6 +296,8 @@ silent! call pathogen#runtime_append_all_bundles()
   " limit autocomplete to current file and ctags
   set complete=.,t,b
 
+  set wildignore+=doc,.git,*.gif,*.jpg,*.png,coverage/**/*.html
+
   " show long lines as errors
   " match ErrorMsg '\%>80v.\+'
 
@@ -323,9 +325,7 @@ silent! call pathogen#runtime_append_all_bundles()
   let g:notes_tagsindex = '~/Documents/Notes/.tags'
   let g:notes_suffix    = '.mkdn'
 
-  " fuzzy finder
-  " let g:fuf_dir_exclude = '\v(^|[/\\])\.(hg|git|bzr)($|[/\\])|tiny_mce.?|doc|tmp'
-
+  " command T
   nmap <leader>f :CommandT<CR>
   nmap <leader>k :CommandTBuffer<CR>
   nmap <leader>j :CommandTJump<CR>
@@ -342,5 +342,11 @@ silent! call pathogen#runtime_append_all_bundles()
   let VimuxUseNearestPane = 1
 
   " turbux
+  let g:turbux_command_rspec  = 'smart_rspec'
+  let g:turbux_command_test_unit = 'ruby'
+  let g:turbux_command_cucumber = 'cucumber --drb'
+  let g:turbux_command_turnip = 'rspec'
   nmap <C-t> <Plug>SendTestToTmux
   nmap <C-f> <Plug>SendFocusedTestToTmux
+  nmap <C-c> :VimuxRunLastCommand<CR>
+  nmap <C-p> :VimuxPromptCommand<CR>
