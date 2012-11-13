@@ -83,7 +83,7 @@ silent! call pathogen#runtime_append_all_bundles()
   " can has foldin plz?
   set nofoldenable
   set foldlevel=1 " make it really high, so they're not displayed by default
-  set foldmethod=syntax
+  set foldmethod=manual
   set foldnestmax=10
 
   " disable escape delay
