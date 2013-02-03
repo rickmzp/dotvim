@@ -81,9 +81,9 @@ silent! call pathogen#runtime_append_all_bundles()
   set backspace=indent,eol,start
 
   " can has foldin plz?
-  set nofoldenable
-  set foldlevel=1 " make it really high, so they're not displayed by default
-  set foldmethod=manual
+  set foldenable
+  set foldlevel=999 " make it really high, so they're not displayed by default
+  set foldmethod=indent
   set foldnestmax=10
 
   " disable escape delay
@@ -234,17 +234,8 @@ silent! call pathogen#runtime_append_all_bundles()
   nmap <F1> <Esc>
   map! <F1> <Esc>
 
-  " insert hashrocket, =>, with control-l
-  imap <C-l> <Space>=><Space>
-
-  " align hashrockets with <leader>t control-l
-  vmap <leader>t<C-l> :Align =><CR>
-
   " Toggle NERDTree with <leader>d
   map <silent> <leader>d :execute 'NERDTreeToggle ' . getcwd()<CR>
-
-  " TextMate fuzzy finder with <leader>t
-  map <silent> <leader>t :FuzzyFinderTextMate<CR>
 
   " FuzzyFinder tags with <leader>T
   nnoremap <silent> <leader>T :FuzzyFinderTag!<CR>
@@ -343,10 +334,20 @@ silent! call pathogen#runtime_append_all_bundles()
 
   " turbux
   let g:turbux_command_rspec  = 'smart_rspec'
-  let g:turbux_command_test_unit = 'ruby'
+  let g:turbux_command_test_unit = 'zeus test'
   let g:turbux_command_cucumber = 'cucumber --drb'
+  let g:turbux_command_rspec  = 'zeus test'
+  let g:turbux_command_test_unit  = 'zeus test'
+  " let g:turbux_command_cucumber = 'zeus cucumber'
   let g:turbux_command_turnip = 'rspec'
   nmap <C-t> <Plug>SendTestToTmux
   nmap <C-f> <Plug>SendFocusedTestToTmux
-  nmap <C-c> :VimuxRunLastCommand<CR>
+  nmap <C-l> :VimuxRunLastCommand<CR>
   nmap <C-p> :VimuxPromptCommand<CR>
+
+  " paste toggle
+  nnoremap <leader>p :set invpaste paste?<CR>
+  set pastetoggle=<leader>p
+  set showmode
+
+  " nmap <C-t>e  :call RunVimTmuxCommand("smart_rspec spec/models/event_spec.rb spec/models/events/*")<CR>
