@@ -336,9 +336,10 @@ silent! call pathogen#runtime_append_all_bundles()
   let g:turbux_command_rspec  = 'smart_rspec'
   let g:turbux_command_test_unit = 'zeus test'
   let g:turbux_command_cucumber = 'cucumber --drb'
-  let g:turbux_command_rspec  = 'zeus test'
-  let g:turbux_command_test_unit  = 'zeus test'
+  " let g:turbux_command_rspec  = 'zeus rspec'
+  " let g:turbux_command_test_unit  = 'zeus test'
   " let g:turbux_command_cucumber = 'zeus cucumber'
+
   let g:turbux_command_turnip = 'rspec'
   nmap <C-t> <Plug>SendTestToTmux
   nmap <C-f> <Plug>SendFocusedTestToTmux
