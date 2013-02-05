@@ -97,3 +97,6 @@
 [submodule "home/.vim/bundle/ri"]
 	path = home/.vim/bundle/ri
 	url = https://github.com/danchoi/ri.vim.git
+[submodule "home/.vim/bundle/YouCompleteMe"]
+	path = home/.vim/bundle/YouCompleteMe
+	url = git://github.com/Valloric/YouCompleteMe.git
