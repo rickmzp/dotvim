@@ -1,34 +1,58 @@
-runtime! autoload/pathogen.vim
-silent! call pathogen#runtime_append_all_bundles()
+" Section: vundle setup
+
+  set nocompatible
+  filetype off
+  scriptencoding utf-8
+
+  set rtp+=~/.vim/bundle/vundle
+  call vundle#rc()
+
+  Bundle "gmarik/vundle"
+  Bundle "Valloric/YouCompleteMe"
+  Bundle "benmills/vimux"
+  Bundle "jgdavey/vim-turbux"
+  Bundle "godlygeek/tabular"
+  Bundle "tpope/vim-endwise"
+  Bundle "tpope/vim-cucumber"
+  Bundle "tpope/vim-haml"
+  Bundle "tpope/vim-rails"
+  Bundle "vim-ruby/vim-ruby"
+  Bundle "garbas/vim-snipmate"
+  Bundle "kchmck/vim-coffee-script"
+  " Bundle "ecomba/vim-ruby-refactoring"
+  Bundle "sjl/gundo.vim"
+  Bundle "godlygeek/tabular"
+  Bundle "danchoi/ri.vim"
+  Bundle "closetag.vim"
+  " Bundle "scrooloose/syntastic"
+  " Bundle "scrooloose/nerdtree"
+  Bundle "git://git.wincent.com/command-t.git"
+  Bundle "vim-scripts/Colour-Sampler-Pack"
+
+  filetype plugin indent on
 
 " Section: configuration
 
-  scriptencoding utf-8
-
   " I like pretty colors
+  syntax on
   set background=dark
   set t_Co=256
   colorscheme vividchalk
 
-  " These two enable syntax highlighting
-  set nocompatible          " We're running Vim, not Vi!
-  syntax on                 " Enable syntax highlighting
-
   " Enable filetype-specific indenting and plugins
   filetype plugin indent on
 
-  " show the `best match so far' as search strings are typed
-  set incsearch
-
-  " Highlight search results once found:
   set hlsearch
+  set ignorecase
+  set smartcase
+  set incsearch
+  nmap \q :nohlsearch<CR>
 
-  " highlight the current line the cursor is on
-  set cursorline
-  "sm:    flashes matching brackets or parentheses
+
+  " flashes matching brackets or parentheses
   set showmatch
 
-  "sta:   helps with backspacing because of expandtab
+  " helps with backspacing because of expandtab
   set smarttab
 
   " Change <Leader>
@@ -105,16 +129,6 @@ silent! call pathogen#runtime_append_all_bundles()
   " map enter to activating a node
   let NERDTreeMapActivateNode='<CR>'
   let NERDTreeIgnore=['\.git','\.DS_Store']
-
-  " limit number of results shown for performance
-  let g:fuzzy_matching_limit=60
-  " ignore stuff that can't be openned, and generated files
-  let g:fuzzy_ignore = "*.png;*.PNG;*.JPG;*.jpg;*.GIF;*.gif;vendor/**;coverage/**;tmp/**;rdoc/**"
-  " increate the number of files scanned for very large projects
-  let g:fuzzy_ceiling=20000
-  " display relative path, instead of abbrevated path (lib/jeweler.rb vs
-  " l/jeweler.rb)
-  let g:fuzzy_path_display = 'relative_path'
 
   let g:browser = 'open '
 
@@ -234,8 +248,8 @@ silent! call pathogen#runtime_append_all_bundles()
   nmap <F1> <Esc>
   map! <F1> <Esc>
 
-  " Toggle NERDTree with <leader>d
-  map <silent> <leader>d :execute 'NERDTreeToggle ' . getcwd()<CR>
+  " Toggle NERDTree with <leader>D
+  " map <silent> <leader>D :execute 'NERDTreeToggle ' . getcwd()<CR>
 
   " FuzzyFinder tags with <leader>T
   nnoremap <silent> <leader>T :FuzzyFinderTag!<CR>
@@ -287,7 +301,6 @@ silent! call pathogen#runtime_append_all_bundles()
   " limit autocomplete to current file and ctags
   set complete=.,t,b
 
-  set wildignore+=doc,.git,*.gif,*.jpg,*.png,coverage/**/*.html
 
   " show long lines as errors
   " match ErrorMsg '\%>80v.\+'
@@ -316,9 +329,10 @@ silent! call pathogen#runtime_append_all_bundles()
   let g:notes_tagsindex = '~/Documents/Notes/.tags'
   let g:notes_suffix    = '.mkdn'
 
-  " command T
-  nmap <leader>f :CommandT<CR>
-  nmap <leader>k :CommandTBuffer<CR>
+  " ctrlp
+  set wildignore+=*.gif,*.jpg,*.png,*/coverage/*,*/doc/*,*/.git/*,*/db/backups/*,*/tmp/*,*/vendor/bundle/*
+  nmap <Leader>f :CommandT<CR>
+  nmap <Leader>k :CommandTBuffer<CR>
   nmap <leader>j :CommandTJump<CR>
 
   " map <leader>t :e ~/Dropbox/todo/todo.txt<CR>
@@ -333,18 +347,18 @@ silent! call pathogen#runtime_append_all_bundles()
   let VimuxUseNearestPane = 1
 
   " turbux
-  let g:turbux_command_rspec  = 'smart_rspec'
-  let g:turbux_command_test_unit = 'zeus test'
-  let g:turbux_command_cucumber = 'cucumber --drb'
-  " let g:turbux_command_rspec  = 'zeus rspec'
-  " let g:turbux_command_test_unit  = 'zeus test'
-  " let g:turbux_command_cucumber = 'zeus cucumber'
+  " let g:turbux_command_rspec  = 'smart_rspec'
+  " let g:turbux_command_test_unit = 'zeus test'
+  " let g:turbux_command_cucumber = 'cucumber --drb'
+  let g:turbux_command_rspec  = 'zeus rspec'
+  let g:turbux_command_test_unit  = 'zeus test'
+  let g:turbux_command_cucumber = 'zeus cucumber'
 
   let g:turbux_command_turnip = 'rspec'
-  nmap <C-t> <Plug>SendTestToTmux
-  nmap <C-f> <Plug>SendFocusedTestToTmux
-  nmap <C-l> :VimuxRunLastCommand<CR>
-  nmap <C-p> :VimuxPromptCommand<CR>
+  map <C-T> <Plug>SendTestToTmux
+  map <C-F> <Plug>SendFocusedTestToTmux
+  map <C-L> :VimuxRunLastCommand<CR>
+  map <C-P> :VimuxPromptCommand<CR>
 
   " paste toggle
   nnoremap <leader>p :set invpaste paste?<CR>
@@ -352,3 +366,29 @@ silent! call pathogen#runtime_append_all_bundles()
   set showmode
 
   " nmap <C-t>e  :call RunVimTmuxCommand("smart_rspec spec/models/event_spec.rb spec/models/events/*")<CR>
+
+  nnoremap  <leader>ri :call ri#OpenSearchPrompt(0)<cr> " horizontal split
+  nnoremap  <leader>RI :call ri#OpenSearchPrompt(1)<cr> " vertical split
+  nnoremap  <leader>RK :call ri#LookupNameUnderCursor()<cr> " keyword lookup 
+  
+  set winwidth=79
+  set winheight=15
+  set winminheight=15
+  set winheight=999
+  
+  nnoremap <silent> + :exe "resize " . (winwidth(0) * 3/2)<CR>
+  nnoremap <silent> - :exe "resize " . (winwidth(0) * 2/3)<CR>
+
+  nnoremap <C-h> <C-w>h
+  nnoremap <C-j> <C-w>j
+  nnoremap <C-k> <C-w>k
+  nnoremap <C-l> <C-w>l
+  
+  hi CursorLine   cterm=NONE ctermbg=black ctermfg=none guibg=darkred guifg=white
+  hi CursorColumn cterm=NONE ctermbg=black ctermfg=none guibg=darkred guifg=white
+  set cursorline cursorcolumn
+  nnoremap <Leader>c :set cursorline! cursorcolumn!<CR>
+
+  let g:syntastic_mode_map = { "mode": "active",
+                             \ "active_filetypes": ["ruby"],
+                             \ "passive_filetypes": [] }

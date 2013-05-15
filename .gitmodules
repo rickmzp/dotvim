@@ -100,3 +100,6 @@
 [submodule "home/.vim/bundle/YouCompleteMe"]
 	path = home/.vim/bundle/YouCompleteMe
 	url = git://github.com/Valloric/YouCompleteMe.git
+[submodule "home/.vim/bundle/vundle"]
+	path = home/.vim/bundle/vundle
+	url = https://github.com/gmarik/vundle.git
