@@ -8,7 +8,7 @@
   call vundle#rc()
 
   Bundle "gmarik/vundle"
-  Bundle "Valloric/YouCompleteMe"
+  " Bundle "Valloric/YouCompleteMe"
   Bundle "benmills/vimux"
   Bundle "jgdavey/vim-turbux"
   Bundle "godlygeek/tabular"
