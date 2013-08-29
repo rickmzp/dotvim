@@ -399,3 +399,8 @@
   let g:syntastic_mode_map = { "mode": "active",
                              \ "active_filetypes": ["ruby"],
                              \ "passive_filetypes": [] }
+  let g:rails_projects = {
+                       \   "api/": {
+                       \     "test": [ "spec/api/%s_spec.rb" ]
+                       \   }
+                       \ }
