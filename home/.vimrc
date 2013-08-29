@@ -311,6 +311,7 @@
 
   " unwanted whitespace removal for ruby
   autocmd BufWritePre *.rb :%s/\s\+$//e
+  autocmd BufWritePre *.py :%s/\s\+$//e
   autocmd BufWritePre *.php :%s/\s\+$//e
   autocmd BufWritePre *.haml :%s/\s\+$//e
   autocmd BufWritePre *.js :%s/\s\+$//e
