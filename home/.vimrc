@@ -32,7 +32,9 @@
   Bundle "git://git.wincent.com/command-t.git"
   Bundle "vim-scripts/Colour-Sampler-Pack"
   Bundle "jnwhiteh/vim-golang"
-
+  Bundle "terryma/vim-multiple-cursors"
+  Bundle "juvenn/mustache.vim"
+  Bundle "mattn/emmet-vim"
   filetype plugin indent on
 
 " Section: configuration
