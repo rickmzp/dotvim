@@ -31,6 +31,7 @@
   " Bundle "scrooloose/nerdtree"
   Bundle "git://git.wincent.com/command-t.git"
   Bundle "vim-scripts/Colour-Sampler-Pack"
+  Bundle "jnwhiteh/vim-golang"
 
   filetype plugin indent on
 
