@@ -362,7 +362,7 @@
   let g:turbux_command_turnip = 'rspec'
   map <C-T> <Plug>SendTestToTmux
   map <C-F> <Plug>SendFocusedTestToTmux
-  map <C-L> :VimuxRunLastCommand<CR>
+  map <C-E> :VimuxRunLastCommand<CR>
   map <C-P> :VimuxPromptCommand<CR>
 
   " paste toggle
