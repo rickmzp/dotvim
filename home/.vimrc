@@ -381,10 +381,9 @@
   nnoremap  <leader>RI :call ri#OpenSearchPrompt(1)<cr> " vertical split
   nnoremap  <leader>RK :call ri#LookupNameUnderCursor()<cr> " keyword lookup 
   
-  set winwidth=79
-  set winheight=15
-  set winminheight=15
-  set winheight=999
+  set winwidth=80
+  set winheight=5
+  set winminheight=5
   
   nnoremap <silent> + :exe "resize " . (winwidth(0) * 3/2)<CR>
   nnoremap <silent> - :exe "resize " . (winwidth(0) * 2/3)<CR>
