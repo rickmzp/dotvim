@@ -35,6 +35,9 @@
   Bundle "terryma/vim-multiple-cursors"
   Bundle "juvenn/mustache.vim"
   Bundle "mattn/emmet-vim"
+  Bundle "othree/html5.vim"
+  Bundle "wikitopian/hardmode"
+  Bundle "rking/ag.vim"
   filetype plugin indent on
 
 " Section: configuration
