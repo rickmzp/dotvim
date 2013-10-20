@@ -406,3 +406,5 @@
                        \     "test": [ "spec/api/%s_spec.rb" ]
                        \   }
                        \ }
+
+  " autocmd VimEnter,BufNewFile,BufReadPost * silent! call HardMode()
