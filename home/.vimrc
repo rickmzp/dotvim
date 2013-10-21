@@ -47,6 +47,7 @@
   " I like pretty colors
   syntax on
   set t_Co=256
+  let g:seoul256_background = 233
   colorscheme seoul256
 
   " Enable filetype-specific indenting and plugins
