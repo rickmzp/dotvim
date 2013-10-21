@@ -406,3 +406,13 @@
                        \ }
 
   " autocmd VimEnter,BufNewFile,BufReadPost * silent! call HardMode()
+
+  function! MapCR()
+      nnoremap <cr> :nohlsearch<cr>
+  endfunction
+  call MapCR()
+
+  augroup vimrcEx
+    autocmd! CmdwinEnter * :unmap <cr>
+    autocmd! CmdwinLeave * :call MapCR()
+  augroup END
