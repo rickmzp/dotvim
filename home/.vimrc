@@ -39,6 +39,7 @@
   Bundle "othree/html5.vim"
   Bundle "wikitopian/hardmode"
   Bundle "rking/ag.vim"
+  Bundle "tpope/vim-surround"
   filetype plugin indent on
 
 " Section: configuration
