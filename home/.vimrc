@@ -29,6 +29,7 @@
   Bundle "closetag.vim"
   " Bundle "scrooloose/syntastic"
   " Bundle "scrooloose/nerdtree"
+  Bundle "junegunn/seoul256.vim"
   Bundle "git://git.wincent.com/command-t.git"
   Bundle "vim-scripts/Colour-Sampler-Pack"
   Bundle "jnwhiteh/vim-golang"
@@ -44,9 +45,8 @@
 
   " I like pretty colors
   syntax on
-  set background=dark
   set t_Co=256
-  colorscheme vividchalk
+  colorscheme seoul256
 
   " Enable filetype-specific indenting and plugins
   filetype plugin indent on
@@ -392,9 +392,7 @@
   nnoremap <C-j> <C-w>j
   nnoremap <C-k> <C-w>k
   nnoremap <C-l> <C-w>l
-  
-  hi CursorLine   cterm=NONE ctermbg=black ctermfg=none guibg=darkred guifg=white
-  hi CursorColumn cterm=NONE ctermbg=black ctermfg=none guibg=darkred guifg=white
+
   set cursorline cursorcolumn
   nnoremap <Leader>c :set cursorline! cursorcolumn!<CR>
 
