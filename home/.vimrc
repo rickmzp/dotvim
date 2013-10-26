@@ -22,7 +22,7 @@
   Bundle "honza/vim-snippets"
   Bundle "garbas/vim-snipmate"
   Bundle "kchmck/vim-coffee-script"
-  " Bundle "ecomba/vim-ruby-refactoring"
+  Bundle "ecomba/vim-ruby-refactoring"
   Bundle "sjl/gundo.vim"
   Bundle "godlygeek/tabular"
   Bundle "danchoi/ri.vim"
