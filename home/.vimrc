@@ -26,7 +26,7 @@
   Bundle "sjl/gundo.vim"
   Bundle "godlygeek/tabular"
   Bundle "danchoi/ri.vim"
-  Bundle "closetag.vim"
+  Bundle "tpope/vim-ragtag"
   " Bundle "scrooloose/syntastic"
   " Bundle "scrooloose/nerdtree"
   Bundle "junegunn/seoul256.vim"
