@@ -40,6 +40,7 @@
   Bundle "wikitopian/hardmode"
   Bundle "rking/ag.vim"
   Bundle "tpope/vim-surround"
+  Bundle "tpope/vim-fugitive"
   filetype plugin indent on
 
 " Section: configuration
