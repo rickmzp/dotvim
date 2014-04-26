@@ -28,7 +28,6 @@
   Bundle "tpope/vim-ragtag"
   Bundle "scrooloose/syntastic"
   Bundle "scrooloose/nerdtree"
-  Bundle "junegunn/seoul256.vim"
   Bundle "wincent/Command-T"
   Bundle "jnwhiteh/vim-golang"
   Bundle "terryma/vim-multiple-cursors"
@@ -44,6 +43,7 @@
 " Section: configuration
 
   " I like pretty colors
+  Bundle "junegunn/seoul256.vim"
   syntax on
   set t_Co=256
   let g:seoul256_background = 233
