@@ -38,6 +38,7 @@
   Bundle "rking/ag.vim"
   Bundle "tpope/vim-surround"
   Bundle "tpope/vim-fugitive"
+  Bundle "nelstrom/vim-markdown-folding"
   filetype plugin indent on
 
 " Section: configuration
