@@ -308,10 +308,6 @@
   set exrc
   set secure  " disable unsafe commands in local .vimrc files
 
-  " limit autocomplete to current file and ctags
-  set complete=.,t,b
-
-
   " show long lines as errors
   " match ErrorMsg '\%>80v.\+'
 
