@@ -26,7 +26,7 @@
   Bundle "sjl/gundo.vim"
   Bundle "danchoi/ri.vim"
   Bundle "tpope/vim-ragtag"
-  " Bundle "scrooloose/syntastic"
+  Bundle "scrooloose/syntastic"
   " Bundle "scrooloose/nerdtree"
   Bundle "junegunn/seoul256.vim"
   Bundle "git://git.wincent.com/command-t.git"
