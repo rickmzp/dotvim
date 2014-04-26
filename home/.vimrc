@@ -151,6 +151,7 @@
     autocmd FileType javascript set autoindent shiftwidth=2 softtabstop=2 expandtab
     autocmd FileType vim set autoindent tabstop=2 shiftwidth=2 softtabstop=2 expandtab
     autocmd FileType cucumber set autoindent tabstop=2 shiftwidth=2 softtabstop=2 expandtab
+    autocmd FileType markdown set spell textwidth=70
     au BufRead,BufNewFile *etc/nginx/* set ft=nginx 
     " treat rackup files like ruby
     au BufRead,BufNewFile *.ru set ft=ruby
