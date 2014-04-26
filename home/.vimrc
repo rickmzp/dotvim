@@ -20,7 +20,7 @@
   Bundle "MarcWeber/vim-addon-mw-utils"
   Bundle "tomtom/tlib_vim"
   Bundle "honza/vim-snippets"
-  Bundle "garbas/vim-snipmate"
+  Bundle "SirVer/ultisnips"
   Bundle "kchmck/vim-coffee-script"
   Bundle "ecomba/vim-ruby-refactoring"
   Bundle "sjl/gundo.vim"
