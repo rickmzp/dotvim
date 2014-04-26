@@ -79,11 +79,6 @@
   set number
   setlocal numberwidth=5
 
-  " Enable tab complete for commands.
-  " first tab shows all matches. next tab starts cycling through the matches
-  set wildmenu
-  set wildmode=list:longest,full
-
   " Display extra whitespace
   set list listchars=tab:»·,trail:·
 
@@ -179,16 +174,6 @@
         \ if line("'\"") > 0 && line("'\"") <= line("$") |
         \   exe "normal g`\"" |
         \ endi
-
-  " Turn on language specific omnifuncs
-  autocmd FileType ruby set omnifunc=rubycomplete#Complete
-  autocmd FileType python set omnifunc=pythoncomplete#Complete
-  autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
-  autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
-  autocmd FileType css set omnifunc=csscomplete#CompleteCSS
-  autocmd FileType xml set omnifunc=xmlcomplete#CompleteTags
-  autocmd FileType php set omnifunc=phpcomplete#CompletePHP
-  autocmd FileType c set omnifunc=ccomplete#Complete
 
 
   " have some fun with bufexplorer
@@ -367,7 +352,20 @@
   map <C-E> :VimuxRunLastCommand<CR>
   map <C-P> :VimuxPromptCommand<CR>
 
+  " YouCompleteMe / Autocompletion
   let g:ycm_collect_identifiers_from_tags_files = 1
+
+  autocmd FileType ruby set omnifunc=rubycomplete#Complete
+  autocmd FileType python set omnifunc=pythoncomplete#Complete
+  autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
+  autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
+  autocmd FileType css set omnifunc=csscomplete#CompleteCSS
+  autocmd FileType xml set omnifunc=xmlcomplete#CompleteTags
+  autocmd FileType php set omnifunc=phpcomplete#CompletePHP
+  autocmd FileType c set omnifunc=ccomplete#Complete
+
+  set wildmenu " autocomplete for command line
+  set wildmode=list:longest,full
 
   " paste toggle
   nnoremap <leader>p :set invpaste paste?<CR>
