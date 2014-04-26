@@ -26,7 +26,6 @@
   Bundle "sjl/gundo.vim"
   Bundle "danchoi/ri.vim"
   Bundle "tpope/vim-ragtag"
-  Bundle "scrooloose/syntastic"
   Bundle "scrooloose/nerdtree"
   Bundle "wincent/Command-T"
   Bundle "jnwhiteh/vim-golang"
@@ -395,6 +394,8 @@
 
   nnoremap <Leader>r :CommandTFlush<CR>
 
+  " Syntastic
+  Bundle "scrooloose/syntastic"
   let g:syntastic_mode_map = { "mode": "active",
                              \ "active_filetypes": ["ruby"],
                              \ "passive_filetypes": [] }
