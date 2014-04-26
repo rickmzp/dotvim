@@ -397,6 +397,8 @@
   set cursorline cursorcolumn
   nnoremap <Leader>c :set cursorline! cursorcolumn!<CR>
 
+  nnoremap <Leader>r :CommandTFlush<CR>
+
   let g:syntastic_mode_map = { "mode": "active",
                              \ "active_filetypes": ["ruby"],
                              \ "passive_filetypes": [] }
