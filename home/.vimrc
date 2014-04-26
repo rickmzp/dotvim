@@ -315,7 +315,7 @@
   " show long lines as errors
   " match ErrorMsg '\%>80v.\+'
 
-  " unwanted whitespace removal for ruby
+  " unwanted whitespace removal/cleaning
   autocmd BufWritePre *.rb :%s/\s\+$//e
   autocmd BufWritePre *.py :%s/\s\+$//e
   autocmd BufWritePre *.php :%s/\s\+$//e
