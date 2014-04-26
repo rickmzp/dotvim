@@ -29,7 +29,7 @@
   Bundle "scrooloose/syntastic"
   Bundle "scrooloose/nerdtree"
   Bundle "junegunn/seoul256.vim"
-  Bundle "git://git.wincent.com/command-t.git"
+  Bundle "wincent/Command-T"
   Bundle "vim-scripts/Colour-Sampler-Pack"
   Bundle "jnwhiteh/vim-golang"
   Bundle "terryma/vim-multiple-cursors"
