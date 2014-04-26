@@ -24,7 +24,6 @@
   Bundle "kchmck/vim-coffee-script"
   Bundle "ecomba/vim-ruby-refactoring"
   Bundle "sjl/gundo.vim"
-  Bundle "godlygeek/tabular"
   Bundle "danchoi/ri.vim"
   Bundle "tpope/vim-ragtag"
   " Bundle "scrooloose/syntastic"
