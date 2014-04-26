@@ -264,9 +264,6 @@
   " Toggle NERDTree with <leader>D
   " map <silent> <leader>D :execute 'NERDTreeToggle ' . getcwd()<CR>
 
-  " FuzzyFinder tags with <leader>T
-  nnoremap <silent> <leader>T :FuzzyFinderTag!<CR>
-
   " <leader>F to begin searching with ack
   map <leader>F :Ack<space>
 
