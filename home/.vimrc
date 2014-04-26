@@ -367,6 +367,8 @@
   map <C-E> :VimuxRunLastCommand<CR>
   map <C-P> :VimuxPromptCommand<CR>
 
+  let g:ycm_collect_identifiers_from_tags_files = 1
+
   " paste toggle
   nnoremap <leader>p :set invpaste paste?<CR>
   set pastetoggle=<leader>p
