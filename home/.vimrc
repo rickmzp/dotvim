@@ -302,6 +302,7 @@
   autocmd BufWritePre *.php :%s/\s\+$//e
   autocmd BufWritePre *.haml :%s/\s\+$//e
   autocmd BufWritePre *.js :%s/\s\+$//e
+  autocmd BufWritePre *.jsx :%s/\s\+$//e
   autocmd BufWritePre *.coffee :%s/\s\+$//e
   autocmd BufWritePre *.feature :%s/\s\+$//e
 
