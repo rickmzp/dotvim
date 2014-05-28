@@ -397,7 +397,7 @@
   nnoremap <Leader>r :CommandTFlush<CR>
 
   " Syntastic
-  Bundle "scrooloose/syntastic"
+  " Bundle "scrooloose/syntastic"
   let g:syntastic_mode_map = { "mode": "active",
                              \ "active_filetypes": ["ruby"],
                              \ "passive_filetypes": [] }
