@@ -156,6 +156,7 @@
     au BufRead,BufNewFile Capfile set ft=ruby                                   
     au BufRead,BufNewFile Thorfile set ft=ruby                                   
     au BufRead,BufNewFile *.god set ft=ruby  
+    au BufRead,BufNewFile .bowerrc set ft=javascript
   augroup END
 
   " my favorite identation [RM]
