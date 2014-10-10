@@ -42,6 +42,7 @@
   Bundle "nelstrom/vim-textobj-rubyblock"
   Bundle "slim-template/vim-slim"
   Bundle "exu/pgsql.vim"
+  Bundle "Lokaltog/vim-easymotion"
   filetype plugin indent on
 
 " Section: configuration
