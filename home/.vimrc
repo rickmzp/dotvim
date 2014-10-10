@@ -391,8 +391,31 @@
   nnoremap <C-k> <C-w>k
   nnoremap <C-l> <C-w>l
 
-  set cursorline cursorcolumn
-  nnoremap <Leader>c :set cursorline! cursorcolumn!<CR>
+  set cursorline
+  set cursorcolumn
+  " nnoremap <Leader>c :set cursorline! cursorcolumn!<CR>
+
+  " Improve move speed
+  let g:boostmove=0
+  set updatetime=50
+  au CursorMoved * call BoostMoveON()
+  au CursorMovedI * call BoostMoveON()
+  au CursorHold * call BoostMoveOFF()
+  au CursorHoldI * call BoostMoveOFF()
+  function! BoostMoveON()
+    if (g:boostmove == 0)
+      let g:boostmove=1
+      setlocal nocursorcolumn
+      setlocal nocursorline
+    endif
+  endfunction
+  function! BoostMoveOFF()
+    if g:boostmove==1
+      let g:boostmove=0
+      setlocal cursorcolumn
+      setlocal cursorline
+    endif
+  endfunction
 
   nnoremap <Leader>r :CommandTFlush<CR>
 
