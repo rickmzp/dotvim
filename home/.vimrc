@@ -41,6 +41,7 @@
   Bundle "kana/vim-textobj-user"
   Bundle "nelstrom/vim-textobj-rubyblock"
   Bundle "slim-template/vim-slim"
+  Bundle "exu/pgsql.vim"
   filetype plugin indent on
 
 " Section: configuration
@@ -160,6 +161,7 @@
     au BufRead,BufNewFile Thorfile set ft=ruby                                   
     au BufRead,BufNewFile *.god set ft=ruby  
     au BufRead,BufNewFile .bowerrc set ft=javascript
+    au BufRead,BufNewFile *.sql set ft=pgsql
     autocmd BufRead,BufNewFile *.slimbars set ft=slim
   augroup END
 
