@@ -38,6 +38,8 @@
   Bundle "tpope/vim-surround"
   Bundle "tpope/vim-fugitive"
   Bundle "nelstrom/vim-markdown-folding"
+  Bundle "kana/vim-textobj-user"
+  Bundle "nelstrom/vim-textobj-rubyblock"
   Bundle "slim-template/vim-slim"
   filetype plugin indent on
 
