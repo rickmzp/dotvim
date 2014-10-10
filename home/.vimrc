@@ -38,6 +38,7 @@
   Bundle "tpope/vim-surround"
   Bundle "tpope/vim-fugitive"
   Bundle "nelstrom/vim-markdown-folding"
+  Bundle "slim-template/vim-slim"
   filetype plugin indent on
 
 " Section: configuration
@@ -157,6 +158,7 @@
     au BufRead,BufNewFile Thorfile set ft=ruby                                   
     au BufRead,BufNewFile *.god set ft=ruby  
     au BufRead,BufNewFile .bowerrc set ft=javascript
+    autocmd BufRead,BufNewFile *.slimbars set ft=slim
   augroup END
 
   " my favorite identation [RM]
@@ -301,10 +303,12 @@
   autocmd BufWritePre *.py :%s/\s\+$//e
   autocmd BufWritePre *.php :%s/\s\+$//e
   autocmd BufWritePre *.haml :%s/\s\+$//e
+  autocmd BufWritePre *.slim :%s/\s\+$//e
   autocmd BufWritePre *.js :%s/\s\+$//e
   autocmd BufWritePre *.jsx :%s/\s\+$//e
   autocmd BufWritePre *.coffee :%s/\s\+$//e
   autocmd BufWritePre *.feature :%s/\s\+$//e
+  autocmd BufWritePre *.slimbars :%s/\s\+$//e
 
   " NeoComplCache
   let g:neocomplcache_enable_at_startup = 1
