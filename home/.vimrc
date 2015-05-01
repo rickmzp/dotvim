@@ -44,6 +44,7 @@
   Bundle "exu/pgsql.vim"
   Bundle "Lokaltog/vim-easymotion"
   Bundle "https://github.com/Keithbsmiley/swift.vim.git"
+  Bundle "slim-template/vim-slim"
   Bundle "powerline/powerline"
   filetype plugin indent on
 
