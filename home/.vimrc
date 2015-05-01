@@ -43,6 +43,7 @@
   Bundle "slim-template/vim-slim"
   Bundle "exu/pgsql.vim"
   Bundle "Lokaltog/vim-easymotion"
+  Bundle "powerline/powerline"
   filetype plugin indent on
 
 " Section: configuration
