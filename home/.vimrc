@@ -45,6 +45,7 @@
   Bundle "Lokaltog/vim-easymotion"
   Bundle "https://github.com/Keithbsmiley/swift.vim.git"
   Bundle "slim-template/vim-slim"
+  Bundle "https://github.com/Lokaltog/vim-easymotion"
   Bundle "powerline/powerline"
   filetype plugin indent on
 
