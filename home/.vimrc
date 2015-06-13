@@ -29,7 +29,6 @@
   Bundle "scrooloose/nerdtree"
   Bundle "wincent/Command-T"
   Bundle "jnwhiteh/vim-golang"
-  Bundle "terryma/vim-multiple-cursors"
   Bundle "juvenn/mustache.vim"
   Bundle "mattn/emmet-vim"
   Bundle "othree/html5.vim"
