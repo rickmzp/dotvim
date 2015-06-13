@@ -445,14 +445,14 @@
 
   " autocmd VimEnter,BufNewFile,BufReadPost * silent! call HardMode()
 
-  function! MapCR()
-      nnoremap <cr> :nohlsearch<cr>
+  function! MapSpace()
+      nnoremap <SPACE> :nohlsearch<CR>
   endfunction
-  call MapCR()
+  call MapSpace()
 
   augroup vimrcEx
-    autocmd! CmdwinEnter * :unmap <cr>
-    autocmd! CmdwinLeave * :call MapCR()
+    autocmd! CmdwinEnter * :unmap <SPACE>
+    autocmd! CmdwinLeave * :call MapSpace()
   augroup END
 
   if &term =~ '^screen'
