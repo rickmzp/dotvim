@@ -40,10 +40,10 @@
   Bundle "kana/vim-textobj-user"
   Bundle "nelstrom/vim-textobj-rubyblock"
   Bundle "exu/pgsql.vim"
-  Bundle "https://github.com/Keithbsmiley/swift.vim.git"
   Bundle "slim-template/vim-slim"
   Bundle "https://github.com/Lokaltog/vim-easymotion"
-  Bundle "powerline/powerline"
+  Bundle "Lokaltog/vim-easymotion"
+  Bundle "toyamarinyon/vim-swift"
   filetype plugin indent on
 
 " Section: configuration
