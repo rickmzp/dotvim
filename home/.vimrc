@@ -41,7 +41,6 @@
   Bundle "nelstrom/vim-textobj-rubyblock"
   Bundle "exu/pgsql.vim"
   Bundle "slim-template/vim-slim"
-  Bundle "https://github.com/Lokaltog/vim-easymotion"
   Bundle "Lokaltog/vim-easymotion"
   Bundle "toyamarinyon/vim-swift"
   Bundle "ervandew/supertab"
@@ -477,4 +476,3 @@
   let g:UltiSnipsJumpForwardTrigger = "<tab>"
   let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"
   let g:SuperTabCrMapping = 0
->>>>>>> Fix UltiSnips with YCM
