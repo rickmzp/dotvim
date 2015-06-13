@@ -45,6 +45,7 @@
   Bundle "Lokaltog/vim-easymotion"
   Bundle "toyamarinyon/vim-swift"
   Bundle "ervandew/supertab"
+  Bundle "powerline/powerline", {"rtp": "powerline/bindings/vim/"}
   filetype plugin indent on
 
 " Section: configuration
