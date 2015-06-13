@@ -476,3 +476,6 @@
   let g:UltiSnipsJumpForwardTrigger = "<tab>"
   let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"
   let g:SuperTabCrMapping = 0
+
+" SQL
+  let g:sql_type_default = 'pgsql'
