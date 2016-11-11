@@ -40,7 +40,6 @@ Plug 'tpope/vim-rails'
 Plug 'benmills/vimux'
 Plug 'jgdavey/vim-turbux'
 Plug 'ngmy/vim-rubocop'
-" Plug 'junegunn/fzf.vim'
 call plug#end()
 
 set t_Co=256
@@ -51,7 +50,10 @@ set nocursorcolumn
 
 let mapleader = ","
 nnoremap <SPACE> :nohlsearch<CR>
-" nmap <LEADER>f :FZF<CR>
+
+" FZF
+set rtp+=/usr/local/opt/fzf
+nmap <LEADER>f :FZF<CR>
 
 " Airline stuff
 set laststatus=2
