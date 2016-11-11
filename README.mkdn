@@ -1,1 +1,1 @@
-Make sure to run `:BundleInstall` in vim after installing
+Make sure to run `:PlugInstall` in vim after installing

@@ -1,6 +1,4 @@
 set nocompatible
-filetype off
-syntax on
 set number
 set incsearch
 set hlsearch
@@ -20,37 +18,30 @@ set backspace=indent,eol,start
 
 let g:airline_powerline_fonts = 1
 
-set rtp+=~/.vim/bundle/Vundle.vim
-
-call vundle#begin()
-
-Plugin 'VundleVim/Vundle.vim'
-Plugin 'bling/vim-airline'
-Plugin 'tpope/vim-fugitive'
-Plugin 'tpope/vim-endwise'
-Plugin 'ntpeters/vim-better-whitespace'
-Plugin 'slim-template/vim-slim'
-Plugin 'airblade/vim-gitgutter'
-Plugin 'rking/ag.vim'
-" Plugin 'scrooloose/syntastic'
-Plugin 'ddollar/nerdcommenter'
-Plugin 'vim-ruby/vim-ruby'
-Plugin 'Valloric/YouCompleteMe'
-Plugin 'SirVer/ultisnips'
-Plugin 'honza/vim-snippets'
-Plugin 'pangloss/vim-javascript'
-Plugin 'mxw/vim-jsx'
-Plugin 'ctrlpvim/ctrlp.vim'
-Plugin 'junegunn/seoul256.vim'
-Plugin 'tpope/vim-rails'
-Plugin 'benmills/vimux'
-Plugin 'jgdavey/vim-turbux'
-Plugin 'ngmy/vim-rubocop'
-Plugin 'junegunn/fzf.vim'
-
-call vundle#end()
-
-filetype plugin indent on
+call plug#begin('~/.vim/plugged')
+Plug 'bling/vim-airline'
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-endwise'
+Plug 'ntpeters/vim-better-whitespace'
+Plug 'slim-template/vim-slim'
+Plug 'airblade/vim-gitgutter'
+Plug 'rking/ag.vim'
+" Plug 'scrooloose/syntastic'
+Plug 'ddollar/nerdcommenter'
+Plug 'vim-ruby/vim-ruby'
+Plug 'Valloric/YouCompleteMe'
+Plug 'SirVer/ultisnips'
+Plug 'honza/vim-snippets'
+Plug 'pangloss/vim-javascript'
+Plug 'mxw/vim-jsx'
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'junegunn/seoul256.vim'
+Plug 'tpope/vim-rails'
+Plug 'benmills/vimux'
+Plug 'jgdavey/vim-turbux'
+Plug 'ngmy/vim-rubocop'
+" Plug 'junegunn/fzf.vim'
+call plug#end()
 
 set t_Co=256
 let g:seoul256_background = 233
@@ -60,7 +51,7 @@ set nocursorcolumn
 
 let mapleader = ","
 nnoremap <SPACE> :nohlsearch<CR>
-nmap <LEADER>f :FZF<CR>
+" nmap <LEADER>f :FZF<CR>
 
 " Airline stuff
 set laststatus=2
