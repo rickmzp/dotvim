@@ -40,6 +40,7 @@ Plug 'tpope/vim-rails'
 Plug 'benmills/vimux'
 Plug 'jgdavey/vim-turbux'
 Plug 'ngmy/vim-rubocop'
+Plug 'junegunn/fzf.vim'
 call plug#end()
 
 set t_Co=256
@@ -54,6 +55,7 @@ nnoremap <SPACE> :nohlsearch<CR>
 " FZF
 set rtp+=/usr/local/opt/fzf
 nmap <LEADER>f :FZF<CR>
+let $FZF_DEFAULT_COMMAND= 'ag -g ""'
 
 " Airline stuff
 set laststatus=2
