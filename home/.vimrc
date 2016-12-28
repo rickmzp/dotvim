@@ -41,11 +41,13 @@ Plug 'benmills/vimux'
 Plug 'jgdavey/vim-turbux'
 Plug 'ngmy/vim-rubocop'
 Plug 'junegunn/fzf.vim'
+Plug 'flazz/vim-colorschemes'
+Plug 'felixhummel/setcolors.vim'
 call plug#end()
 
 set t_Co=256
-let g:seoul256_background = 233
-colorscheme seoul256
+" let g:seoul256_background = 233
+colorscheme apprentice
 set nocursorline
 set nocursorcolumn
 
